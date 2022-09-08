@@ -11,10 +11,10 @@ nav{
 #my_logo{
     width:55px;
     border-radius: 2rem;
+    margin: 0.2rem 2rem 0rem 0rem;
 }
 li{
-    margin:0.2rem 2rem 0rem 0rem;
-    padding:0.1 rem;
+    margin:0.2rem 4rem 0rem -0.7rem;
 }
 li a{
     text-decoration:none;
