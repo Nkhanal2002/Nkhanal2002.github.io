@@ -1,0 +1,24 @@
+ul{
+    display:flex;
+    list-style-type:none;
+
+}
+li{
+    margin:0.2rem 2rem 0rem 0rem;
+    padding:0.1rem;
+}
+body{
+    background-color: azure;
+}
+li a{
+    text-decoration: none;
+}
+li a:hover{
+    color:red;
+}
+div h3{
+    text-align: center;
+}
+footer p {
+    text-align: center;
+}

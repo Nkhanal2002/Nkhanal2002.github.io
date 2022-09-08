@@ -1,0 +1,28 @@
+ul{
+    display:flex;
+    list-style-type:none;
+
+}
+li{
+    margin:0.2rem 2rem 0rem 0rem;
+    padding:0.1 rem;
+}
+li a{
+    text-decoration:none;
+}
+li a:hover{
+    color:red;
+}
+body{
+    background-color:azure;
+}
+h2{
+    text-align: center;
+}
+div img{
+    border-radius: 2em;
+    
+}
+footer{
+    text-align: center;
+}
