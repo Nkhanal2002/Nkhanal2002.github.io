@@ -11,7 +11,9 @@ li a{
     text-decoration:none;
 }
 li a:hover{
-    color:red;
+    color:black;
+    padding:0.8rem;
+    background-color:lightblue;
 }
 body{
     background-color:azure;
