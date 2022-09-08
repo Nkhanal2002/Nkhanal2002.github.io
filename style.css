@@ -1,7 +1,16 @@
 ul{
     display:flex;
     list-style-type:none;
+    color:yellow;
 
+}
+nav{
+    display:flex;
+    background-color: rgb(53, 147, 170);
+}
+#my_logo{
+    width:55px;
+    border-radius: 2rem;
 }
 li{
     margin:0.2rem 2rem 0rem 0rem;
@@ -9,6 +18,7 @@ li{
 }
 li a{
     text-decoration:none;
+    color:white;
 }
 li a:hover{
     color:black;
@@ -17,6 +27,9 @@ li a:hover{
 }
 body{
     background-color:azure;
+}
+main{
+    height:100%;
 }
 h2{
     text-align: center;
@@ -27,4 +40,7 @@ div img{
 }
 footer{
     text-align: center;
+    background-color: rgb(53, 147, 170);
+    color:white;
+
 }

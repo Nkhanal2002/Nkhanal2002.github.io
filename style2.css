@@ -1,10 +1,20 @@
+nav{
+    display:flex;
+    background-color: rgb(53, 147, 170);
+    
+}
 ul{
     display:flex;
     list-style-type:none;
 
 }
-li{
-    margin:0.2rem 2rem 0rem 0rem;
+#my_logo{
+    width:55px;
+    border-radius: 2rem;
+    margin: 0.2rem 2rem 0rem 0rem;
+}
+.nav{
+    margin:0.2rem 8rem 0rem -4rem;
     padding:0.1rem;
 }
 body{
@@ -12,6 +22,7 @@ body{
 }
 li a{
     text-decoration: none;
+    color: white;
 }
 li a:hover{
     color:black;
@@ -23,4 +34,6 @@ div h3{
 }
 footer p {
     text-align: center;
+    background-color: rgb(53, 147, 170);
+    color:white;
 }
