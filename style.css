@@ -8,6 +8,7 @@ nav{
     display:flex;
     background-color: rgb(53, 147, 170);
 }
+
 #my_logo{
     width:55px;
     border-radius: 2rem;
@@ -22,9 +23,7 @@ li a{
     font-size:1.2rem;
 }
 li a:hover{
-    color:black;
-    padding:0.8rem;
-    background-color:lightblue;
+  font-weight:bold;
 }
 body{
     background-color:azure;
