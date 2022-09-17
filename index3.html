@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Third Page</title>
     <link rel="icon" href="Imgs/My_Photo.JPG">
+    <title>Third Page</title>
     <style>
         body{
             background-color: azure;
@@ -60,7 +60,7 @@
 <body>
     <table>
         <thead>
-            <th colspan = "4" id ="th1">Front End Development</th>
+            <tr><th colspan = "4" id ="th1">Front End Development</th></tr>
 
             <tr>
                 <th>Web Designing Tools</th>
@@ -71,30 +71,31 @@
         </thead>
         <tbody class="body">
         <tr>
-            <td title="Hyper Text Markup Language">HTML</td> <td><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">More About HTML</a></td>
-            <td><img src="Imgs/Html_logo.png" alt="Html logo" width = 100px></td>
+            <td title="Hyper Text Markup Language">HTML</td> 
+            <td><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">More About HTML</a></td>
+            <td><img src="Imgs/Html_logo.png" alt="Html logo" width = "100"></td>
             <td><div class="description">HTML stands for <i>Hyper Text Markup Language.</i> It is one of the main three web page designing tool that helps to structure the webpage. For instance, you can think it as a skeleton part of the human.
             <p> A table showing a few of HTML tags with function and a short example:</p>
             <table class="htmlTable">
                 <thead>
-                <tr>
-                    <th>
+                    <tr>
+                        <th>
                         HTML Tags
-                    </th>
-                    <th>
+                        </th>
+                        <th>
                         Function 
-                    </th>
-                    <th>
+                        </th>
+                        <th>
                         An Example 
-                    </th>
+                        </th>
 
-                </tr>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>&lt;img&gt;</td>
                         <td>To insert image/s to a webpage.</td>
-                        <td rowspan = "4">
+                        <td rowspan = "3">
                             <img src="Imgs/HTML_Example.png" alt=" An Example of HTML tags" width="100%" height="100%">
                         </td>
                     </tr>
@@ -114,22 +115,21 @@
             <tr>
                 <td title="Cascading Style Sheet">CSS</td>
                 <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank" >More About CSS</a></td>
-                <td><img src="Imgs/CSS_logo.png" alt="CSS Logo" width="100px"></td>
+                <td><img src="Imgs/CSS_logo.png" alt="CSS Logo" width="100"></td>
                 <td><div class="description">CSS stands for <i>Cascading Style Sheet.</i> It helps to put on some styles on the webpage to make it looks good. For example, you can consider CSS as a human body with just muscles over skeleton part.</div></td>
             </tr>
             <tr>
                 <td title="JavaScript">JS</td>
                 <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target="_blank">More About JS</a></td>
-                <td><img src="Imgs/JS_Logo.webp" alt="JS logo" width =100px></td>
+                <td><img src="Imgs/JS_Logo.webp" alt="JS logo" width ="100"></td>
                 <td><div class="description">JS stands for <i>JavaScript</i>. It is one of the most important tools in building a logical website.For example, you can assume it as a complete human beings with sense organs who can talk and walk. </div></td>
             </tr>
         </tbody>
         <tfoot class="foot">
-            <th colspan = 4><p>&copy; Copyright Front End Development</p></th>
+            <tr><td colspan = 4><p>&copy; Copyright Front End Development</p></td></tr>
         </tfoot>
     </table>
-    <button type="homebutton" id="btn1"><a href="index.html" class="a_btn1">Home</a></button>
-    <button type="secondWebpageButton"id=btn2 ><a href="index2.html"class="a_btn2">Second Webpage</a></button>
-
+    <button type="button" id="btn1"><a href="index.html" class= "a_btn1"> Home</a></button>
+    <button type="button" id="btn2" ><a href="index2.html" class="a_btn2"> Second Webpage</a></button>
 </body>
 </html>
