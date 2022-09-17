@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Imgs/My_Photo.JPG" type="x-icon">
-    <title>My First Webpage</title>
     <link rel="stylesheet" href="style.css">
+    <title>My First Webpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(224, 243, 244);
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin-top:1.2rem;
+
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(134, 55, 224);
+        }
+
+        #my_logo {
+            width: 55px;
+            border-radius: 2rem;
+            margin: 0.2rem 2rem 0rem 0rem;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            margin-right: 4rem;
+            margin-left: 0.2rem;
+        }
+
+        li a:hover {
+            font-weight: bold;
+        }
+
+        main {
+            height: 100%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        div img {
+            border-radius: 2em;
+
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(134, 55, 224);
+            color: white;
+            font-size:1rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+
+        }
+    </style>
 </head>
+
 <body>
-    <!-- My name is Narayan Khanal, and my course name is Web Page Design and Programming. -->
+    <!-- Name: Narayan Khanal-->
+    <!-- Course: Webpage Design and Programming -->
     <header>
         <nav>
-            <img id = "my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title ="Narayan Khanal">
+            <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
             <ul>
-                <li id ="nav"><a href = #index.html> Home </a></li>
-                <li id="nav"><a href = "index2.html" target ="_blank">Second Webpage</a></li>
-                <li id="nav"><a href="index3.html" target="_blank">Third Webpage</a></li>
+                <li id="nav"><a href=#index.html> Home </a></li>
+                <li id="nav"><a href="index2.html">Second Webpage</a></li>
+                <li id="nav"><a href="index3.html">Third Webpage</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div>
-            <h2>My First Webpage</h1> 
-            <img src="Imgs/My_Photo.JPG" alt="My Photo" width="50px" title="Narayan Khanal">
-            <p>Hi there! This is Narayan Khanal, an aspiring web developer. I have started learning <abbr title="Hyper Text Markup Language">HTML</abbr> to build my career in Web Developement.</p>
-    
-            <p>If you would like to visit my second webpage, you can also click  <a href="index2.html">here</a>.</p>
+            <h2>My First Webpage</h1>
+                <img src="Imgs/My_Photo.JPG" alt="My Photo" width="50px" title="Narayan Khanal">
+                <p>Hi there! This is Narayan Khanal, an aspiring web developer. I have started learning <abbr
+                        title="Hyper Text Markup Language">HTML</abbr> to build my career in Web Developement.</p>
+
+                <p>If you would like to visit my second webpage, you can also click <a href="index2.html">here</a>.</p>
         </div>
     </main>
     <footer>
         <p>&copy; 2022 Narayan Khanal</p>
     </footer>
-</body>  
+</body>
+
 </html>

@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Imgs/My_Photo.JPG">
+
     <title>Third Page</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
         body{
-            background-color: azure;
+            background-color:rgb(224, 243, 244);
+            font-family:'Roboto', sans-serif;
         }
         div.description{
             text-align:justify;
@@ -20,39 +24,37 @@
             text-align: center;
         }
         #th1,.foot{
-            background-color:rgb(53, 147, 170);
+            background-color:rgb(134, 55, 224);
             color: white;
         }
         #th1{
             height:100px;
         }
-        #btn1{
-            background-color:rgb(53, 147, 170) ;
-            padding: 1rem;
-            margin-top:0.3rem;
-            border-radius:1.2rem;
-        }
-        #btn2{
-            background-color:rgb(53, 147, 170) ;
-            padding: 1rem 0.3rem 1rem 0.3rem;
-            margin-left:1rem;
-            border-radius:1.2rem;
+        .btn{
+            background-color:rgb(134, 55, 224) ;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            border-radius: 0.5rem;
+            padding-top:0.5rem;
+            padding-bottom:0.4rem;
         }
         .a_btn1{
             color:white;
-            font-size:1rem;
+            font-size:0.9rem;
             text-decoration: none;
         }
 
         .a_btn1:hover{
             font-weight: bold;
+            color:black;
         }
         .a_btn2:hover{
             font-weight: bold;
+            color:black;
         }
         .a_btn2{
             color:white;
-            font-size:1rem;
+            font-size:0.9rem;
             text-decoration: none;
         }
     </style>
@@ -129,7 +131,7 @@
             <tr><td colspan = 4><p>&copy; Copyright Front End Development</p></td></tr>
         </tfoot>
     </table>
-    <button type="button" id="btn1"><a href="index.html" class= "a_btn1"> Home</a></button>
-    <button type="button" id="btn2" ><a href="index2.html" class="a_btn2"> Second Webpage</a></button>
+    <button type="button" class="btn"><a href="index.html" class= "a_btn1"> Home</a></button>
+    <button type="button" class="btn" ><a href="index2.html" class="a_btn2"> Second Webpage</a></button>
 </body>
 </html>

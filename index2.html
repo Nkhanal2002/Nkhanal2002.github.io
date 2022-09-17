@@ -1,35 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <link rel="icon" href="Imgs/Html_logo.png" type ="x-icon">
+    <link rel="icon" href="Imgs/Html_logo.png" type="x-icon">
     <title>HTML Basics</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        nav {
+            display: flex;
+            background-color: rgb(134, 55, 224);
+
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+        }
+
+        #my_logo {
+            width: 55px;
+            border-radius: 2rem;
+            margin: 0.2rem 2rem 0rem 0rem;
+        }
+
+        .nav {
+            margin-top:0.4rem;
+            margin-bottom:0.2rem;
+            margin-right: 4rem;
+        }
+        .nav_items{
+            justify-content:center;
+            align-items: center;
+        }
+
+        body {
+            background-color: rgb(224, 243, 244);
+            ;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        li a:hover {
+            font-weight: bold;
+        }
+
+        div h3 {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(134, 55, 224);
+            color: white;
+            padding: 0.2rem 0 0.2rem 0;
+            font-size: 1rem;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-    <nav>
-        <img id = "my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title ="Narayan Khanal">
-        <ul>
-        <li class="nav"><a id = "home" href = "index.html"> Home </a></li>
-        <li class="nav"><a id = "second_webpage" href = "#index2.html">Second Webpage</a></li>
-        <li class="nav"><a href="index3.html">Third Webpage</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
+            <ul>
+                <li class="nav"><a class="nav_items" href="index.html"> Home </a></li>
+                <li class="nav"><a class="nav_items" href="#index2.html">Second Webpage</a></li>
+                <li class="nav"><a class="nav_items"href="index3.html">Third Webpage</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div>
             <h3>Ways to learn Front-End Development</h3>
-            <p>To learn a <b>Front-End Development</b>, one should have a good understanding of <em>three web designing tools</em>. They are: 
-                <ol>
-                    <li id ="html"><abbr title="Hyper Text Mark up Language">HTML</abbr></li><img src = "Imgs/Html_logo.png" alt ="a logo of HTML" width="30px"><p>HTML stands for <i>Hyper Text Markup Language.</i>It is one of the main three web page designing tool that helps to structure the webpage. For instance, you can think it as a skeleton part of the human body.</p>
+            <p>To learn a <b>Front-End Development</b>, one should have a good understanding of <em>three web designing
+                    tools</em>. They are:
+            <ol>
+                <li id="html"><abbr title="Hyper Text Mark up Language">HTML</abbr></li><img src="Imgs/Html_logo.png"
+                    alt="a logo of HTML" width="30px">
+                <p>HTML stands for <i>Hyper Text Markup Language.</i>It is one of the main three web page designing tool
+                    that helps to structure the webpage. For instance, you can think it as a skeleton part of the human
+                    body.</p>
 
-                    <li><abbr title = "Cascading Style Sheet">CSS</abbr></li><img src = "Imgs/CSS_logo.png" alt = "a logo of CSS" width = "40px"><p>CSS stands for <i>Cascading Style Sheet.</i> It helps to put on some styles on the webpage to make it looks good. For example, you can consider CSS as a human body with just muscles over skeleton part.</p>
+                <li><abbr title="Cascading Style Sheet">CSS</abbr></li><img src="Imgs/CSS_logo.png" alt="a logo of CSS"
+                    width="40px">
+                <p>CSS stands for <i>Cascading Style Sheet.</i> It helps to put on some styles on the      webpage to make it looks good. For example, you can consider CSS as a human body with just muscles over skeleton part.
+                </p>
 
-                    <li><abbr title = "JavaScript">JS</abbr></li><img src="Imgs/JS_Logo.webp" alt="a logo of JS" width = "50px"><p>JS stands for <i>JavaScript</i>. It is one of the most important tools in building a logical website.For example, you can assume it as a complete human beings with sense organs who can talk and walk. </p>
-                </ol>
+                <li><abbr title="JavaScript">JS</abbr></li><img src="Imgs/JS_Logo.webp" alt="a logo of JS" width="50px">
+                <p>JS stands for <i>JavaScript</i>. It is one of the most important tools in building a logical
+                    website.For example, you can assume it as a complete human beings with sense organs who can talk and
+                    walk. </p>
+            </ol>
 
         </div>
     </main>
@@ -37,4 +109,5 @@
         <p>&copy; 2022 Narayan Khanal</p>
     </footer>
 </body>
+
 </html>
