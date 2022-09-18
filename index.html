@@ -27,6 +27,35 @@
         nav {
             display: flex;
             background-color: rgb(134, 55, 224);
+            width:100%
+        }
+        
+        @media only screen and (max-width:650px) {
+            ul{
+                display:block;
+            }
+            nav{
+                display:block;
+            }
+            #my_logo{
+               padding-left:10%;
+               padding-right:10%;
+               padding-top:2%;
+            }
+    
+            #home{
+                padding-bottom:4%;
+                
+            }
+            #secondwebpage{
+                padding-bottom: 4%;
+            }
+            #thirdwebpage{
+                padding-bottom:4%;
+            }
+               
+
+            
         }
 
         #my_logo {
@@ -45,6 +74,7 @@
 
         li a:hover {
             font-weight: bold;
+            color:black;
         }
 
         main {
@@ -79,9 +109,9 @@
         <nav>
             <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
             <ul>
-                <li id="nav"><a href=#index.html> Home </a></li>
-                <li id="nav"><a href="index2.html">Second Webpage</a></li>
-                <li id="nav"><a href="index3.html">Third Webpage</a></li>
+                <li id="home"><a href=#index.html> Home </a></li>
+                <li id="secondwebpage"><a href="index2.html">Second Webpage</a></li>
+                <li id="thirdwebpage"><a href="index3.html">Third Webpage</a></li>
             </ul>
         </nav>
     </header>

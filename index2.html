@@ -37,6 +37,28 @@
             justify-content:center;
             align-items: center;
         }
+        @media only screen and (max-width:650px){
+            nav{
+                display:block;
+            }
+            ul{
+                display:block;
+            }
+            #my_logo{
+                padding-left:9.1%;
+                padding-right:10%;
+                padding-top:2%;
+            }
+            #home{
+                padding-bottom:4%;
+            }
+            #secondwebpage{
+                padding-bottom: 4%;
+            }
+            #thirdwebpage{
+                padding-bottom:4%;
+            }
+        }
 
         body {
             background-color: rgb(224, 243, 244);
@@ -53,6 +75,7 @@
 
         li a:hover {
             font-weight: bold;
+            color:black;
         }
 
         div h3 {
@@ -74,9 +97,9 @@
         <nav>
             <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
             <ul>
-                <li class="nav"><a class="nav_items" href="index.html"> Home </a></li>
-                <li class="nav"><a class="nav_items" href="#index2.html">Second Webpage</a></li>
-                <li class="nav"><a class="nav_items"href="index3.html">Third Webpage</a></li>
+                <li class="nav" id="home"><a class="nav_items" href="index.html"> Home </a></li>
+                <li class="nav" id="secondwebpage"><a class="nav_items" href="#index2.html">Second Webpage</a></li>
+                <li class="nav" id="thirdwebpage"><a class="nav_items"href="index3.html">Third Webpage</a></li>
             </ul>
         </nav>
     </header>
