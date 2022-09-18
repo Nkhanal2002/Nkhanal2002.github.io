@@ -32,30 +32,15 @@
         }
         .btn{
             background-color:rgb(134, 55, 224) ;
-            margin-top: 1rem;
-            margin-left: 1rem;
-            border-radius: 0.5rem;
-            padding-top:0.5rem;
-            padding-bottom:0.4rem;
-        }
-        .a_btn1{
+            margin:1rem 1rem 0rem 0rem;
+            padding:0.3rem;
+            border-radius:0.5rem;
             color:white;
-            font-size:0.9rem;
-            text-decoration: none;
         }
-
-        .a_btn1:hover{
-            font-weight: bold;
+        .btn:hover{
+            background-color: white;
             color:black;
-        }
-        .a_btn2:hover{
-            font-weight: bold;
-            color:black;
-        }
-        .a_btn2{
-            color:white;
-            font-size:0.9rem;
-            text-decoration: none;
+            border:2px solid blue;
         }
     </style>
 </head>
@@ -131,7 +116,7 @@
             <tr><td colspan = 4><p>&copy; Copyright Front End Development</p></td></tr>
         </tfoot>
     </table>
-    <button type="button" class="btn"><a href="index.html" class= "a_btn1"> Home</a></button>
-    <button type="button" class="btn" ><a href="index2.html" class="a_btn2"> Second Webpage</a></button>
+    <a href="index.html" class= "a_btn1"> <button type="button" class="btn">Home</button></a>
+    <a href="index2.html" class="a_btn2"> <button type="button" class="btn" >Second Webpage</button></a>
 </body>
 </html>
