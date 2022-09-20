@@ -11,7 +11,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
         body{
-            background-color:rgb(224, 243, 244);
+            background-color:rgba(224, 243, 244,0.8);
             font-family:'Roboto', sans-serif;
         }
         div.description{
@@ -19,19 +19,21 @@
             margin:0 0 0 3rem;
             padding: 0 2rem 0 0;
         }
-        table, thead,th,tr,td{
+        th,tr,td{
             border:1px solid;
             text-align: center;
         }
+        
         #th1,.foot{
-            background-color:rgb(134, 55, 224);
+            background-color:rgba(134, 55, 224,1);
             color: white;
+            text-shadow:0.5px 0.5px black;
         }
         #th1{
             height:100px;
         }
         .btn{
-            background-color:rgb(134, 55, 224) ;
+            background-color:rgb(134, 55, 224);
             margin:1rem 1rem 0rem 0rem;
             padding:0.3rem;
             border-radius:0.5rem;
@@ -42,10 +44,21 @@
             color:black;
             border:2px solid blue;
         }
+        @media only screen and (max-width:650px){
+            #html_example{
+                width:100%;
+                height:100%;
+            }
+            #bigTable,#htmlTable{
+                overflow:hidden;
+                width:100%;
+                height:100%;
+            }
+        }
     </style>
 </head>
 <body>
-    <table>
+    <table class="bigTable">
         <thead>
             <tr><th colspan = "4" id ="th1">Front End Development</th></tr>
 
@@ -60,10 +73,10 @@
         <tr>
             <td title="Hyper Text Markup Language">HTML</td> 
             <td><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">More About HTML</a></td>
-            <td><img src="Imgs/Html_logo.png" alt="Html logo" width = "100"></td>
+            <td><img src="Imgs/Html_logo.png" alt="Html logo" width = "100px"></td>
             <td><div class="description">HTML stands for <i>Hyper Text Markup Language.</i> It is one of the main three web page designing tool that helps to structure the webpage. For instance, you can think it as a skeleton part of the human.
             <p> A table showing a few of HTML tags with function and a short example:</p>
-            <table class="htmlTable">
+            <table class="htmlTable" style="border:1px solid">
                 <thead>
                     <tr>
                         <th>
@@ -79,18 +92,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="smallTable">
                         <td>&lt;img&gt;</td>
                         <td>To insert image/s to a webpage.</td>
                         <td rowspan = "3">
-                            <img src="Imgs/HTML_Example.png" alt=" An Example of HTML tags" width="100%" height="100%">
+                            <img id = "html_example" src="Imgs/HTML_Example.png" alt=" An Example of HTML tags" width="100%" height="100%">
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="smallTable">
                         <td>&lt;a&gt;</td>
                         <td>To create a link option in a webpage.</td>
                     </tr>
-                    <tr>
+                    <tr class="smallTable">
                         <td>&lt;ul&gt;</td>
                         <td>To create an unorder list.</td>
                     </tr>
@@ -102,7 +115,7 @@
             <tr>
                 <td title="Cascading Style Sheet">CSS</td>
                 <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank" >More About CSS</a></td>
-                <td><img src="Imgs/CSS_logo.png" alt="CSS Logo" width="100"></td>
+                <td><img src="Imgs/CSS_logo.png" alt="CSS Logo" width="90"></td>
                 <td><div class="description">CSS stands for <i>Cascading Style Sheet.</i> It helps to put on some styles on the webpage to make it looks good. For example, you can consider CSS as a human body with just muscles over skeleton part.</div></td>
             </tr>
             <tr>
@@ -113,7 +126,7 @@
             </tr>
         </tbody>
         <tfoot class="foot">
-            <tr><td colspan = 4><p>&copy; Copyright Front End Development</p></td></tr>
+            <tr><td colspan = 4><p style="font-weight:bold">&copy; Copyright Front End Development</p></td></tr>
         </tfoot>
     </table>
     <a href="index.html" class= "a_btn1"> <button type="button" class="btn">Home</button></a>
