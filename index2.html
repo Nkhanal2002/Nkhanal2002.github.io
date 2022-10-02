@@ -14,9 +14,10 @@
             display: flex;
             background-color: rgb(134, 55, 224);
 
+
         }
 
-        ul {
+        .navbar-list {
             display: flex;
             list-style-type: none;
 
@@ -29,34 +30,51 @@
         }
 
         .nav {
-            margin-top:0.4rem;
-            margin-bottom:0.2rem;
+            margin-top: 0.4rem;
+            margin-bottom: 0.2rem;
             margin-right: 4rem;
         }
-        .nav_items{
-            justify-content:center;
+
+        .nav_items {
+            justify-content: center;
             align-items: center;
         }
-        @media only screen and (max-width:650px){
-            nav{
-                display:block;
+
+        @media only screen and (max-width:650px) {
+            nav {
+                display: block;
             }
-            ul{
-                display:block;
+
+            .navbar-list {
+                display: block;
             }
-            #my_logo{
-                padding-left:9.1%;
-                padding-right:10%;
-                padding-top:2%;
+
+            #my_logo {
+                padding-left: 9.1%;
+                padding-right: 10%;
+                padding-top: 2%;
             }
-            #home{
-                padding-bottom:4%;
-            }
-            #secondwebpage{
+
+            #home {
                 padding-bottom: 4%;
             }
-            #thirdwebpage{
-                padding-bottom:4%;
+
+            #secondwebpage {
+                padding-bottom: 4%;
+            }
+
+            #thirdwebpage {
+                padding-bottom: 4%;
+            }
+
+            .foot-header2 {
+                margin-left: 2rem;
+            }
+
+            #submit-btn {
+                margin-top: 4px;
+                font-size: 0.7rem;
+
             }
         }
 
@@ -67,7 +85,7 @@
 
         }
 
-        li a {
+        li .list-items {
             text-decoration: none;
             color: white;
             font-size: 1rem;
@@ -75,19 +93,58 @@
 
         li a:hover {
             font-weight: bold;
-            text-shadow:0.5px 1px black;
+            text-shadow: 0.5px 1px black;
         }
 
-        div h3 {
+        .main-container h3 {
             text-align: center;
         }
 
         footer {
-            text-align: center;
             background-color: rgb(134, 55, 224);
             color: white;
             padding: 0.2rem 0 0.2rem 0;
             font-size: 1rem;
+            height:100%;
+        }
+
+        [class="footer-info"] a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+
+        .footer-info {
+            list-style-type: none;
+        }
+
+        [name="footer-title"] {
+            padding-left: 2rem;
+        }
+
+        .foot-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .foot-header1 {
+            text-align: center;
+        }
+
+        .text-form {
+            margin-top: 33px;
+        }
+
+        #email {
+            padding: 0.3rem;
+            border-radius: 0.3rem;
+            font-size: 0.8rem;
+        }
+
+        .social-media:hover {
+            font-weight: bold;
+            text-shadow: 0.5px 1px black;
         }
     </style>
 </head>
@@ -96,15 +153,15 @@
     <header>
         <nav>
             <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
-            <ul>
-                <li class="nav" id="home"><a class="nav_items" href="index.html"> Home </a></li>
-                <li class="nav" id="secondwebpage"><a class="nav_items" href="#index2.html">Second Webpage</a></li>
-                <li class="nav" id="thirdwebpage"><a class="nav_items"href="index3.html">Third Webpage</a></li>
+            <ul class="navbar-list">
+                <li class="nav" id="home"><a class="list-items" href="index.html"> Home </a></li>
+                <li class="nav" id="secondwebpage"><a class="list-items" href="#index2.html">Second Webpage</a></li>
+                <li class="nav" id="thirdwebpage"><a class="list-items" href="index3.html">Third Webpage</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div>
+        <div class="main-container">
             <h3>Ways to learn Front-End Development</h3>
             <p>To learn a <b>Front-End Development</b>, one should have a good understanding of <em>three web designing
                     tools</em>. They are:
@@ -117,7 +174,8 @@
 
                 <li><abbr title="Cascading Style Sheet">CSS</abbr></li><img src="Imgs/CSS_logo.png" alt="a logo of CSS"
                     width="40px">
-                <p>CSS stands for <i>Cascading Style Sheet.</i> It helps to put on some styles on the      webpage to make it looks good. For example, you can consider CSS as a human body with just muscles over skeleton part.
+                <p>CSS stands for <i>Cascading Style Sheet.</i> It helps to put on some styles on the webpage to make it
+                    looks good. For example, you can consider CSS as a human body with just muscles over skeleton part.
                 </p>
 
                 <li><abbr title="JavaScript">JS</abbr></li><img src="Imgs/JS_Logo.webp" alt="a logo of JS" width="50px">
@@ -129,8 +187,28 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2022 Narayan Khanal</p>
-    </footer>
+        <footer>
+            <div class="foot-container">
+                <div class="foot-header1">
+                    <h3 name="footer-title">Join Me</h3>
+                    <ul class="footer-info">
+                        <li><a href="" class="social-media">Linkedin</a></li>
+                        <li><a href="" class="social-media">Instagram</a></li>
+                        <li><a href="" class="social-media">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="foot-header2">
+                    <h3 title="Sign up for more information">Sign Up For More Information</h3>
+                    <div class="text-form">
+                        <form action="">
+                            <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                            <input type="submit" name="submit-btn" id="submit-btn" value="Submit">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>

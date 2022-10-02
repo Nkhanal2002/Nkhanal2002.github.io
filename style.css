@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(224, 243, 244);
+        }
+
+        .navbar-list {
+            display: flex;
+            list-style-type: none;
+            margin-top: 1.2rem;
+
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(134, 55, 224);
+            width: 100%;
+        }
+
+        @media only screen and (max-width:650px) {
+            .navbar-list {
+                display: block;
+            }
+
+            nav {
+                display: block;
+            }
+
+            #my_logo {
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 2%;
+            }
+
+            #home {
+                padding-bottom: 4%;
+
+            }
+
+            #secondwebpage {
+                padding-bottom: 4%;
+            }
+
+            #thirdwebpage {
+                padding-bottom: 4%;
+            }
+            .foot-header2{
+                margin-left:2rem;
+            }
+            #submit-btn{
+                margin-top:4px;
+
+            }
+
+
+        }
+
+        #my_logo {
+            width: 55px;
+            border-radius: 2rem;
+            margin: 0.2rem 2rem 0rem 0rem;
+        }
+
+        li .list-item {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            margin-right: 4rem;
+            margin-left: 0.2rem;
+        }
+
+        li .list-item:hover {
+            font-weight: bold;
+            text-shadow: 0.5px 1px black;
+        }
+
+        main {
+            height: 100%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        div img {
+            border-radius: 2em;
+
+        }
+
+        .main-container {
+            height: 60vh;
+        }
+
+        footer {
+            background-color: rgb(134, 55, 224);
+            color: white;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            height:100%;
+
+        }
+
+        [class="footer-info"] a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+
+        .footer-info {
+            list-style-type: none;
+        }
+
+        [name="footer-title"] {
+            padding-left: 2rem;
+        }
+
+        .foot-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .foot-header1 {
+            text-align: center;
+        }
+        .text-form{
+            margin-top: 33px;
+        }
+        #email{
+            padding:0.3rem;
+            border-radius:0.3rem;
+            font-size:90%;
+        }
+        #submit-btn{
+            font-size:90%;
+        }
+        .social-media:hover{
+            font-weight: bold;
+            text-shadow: 0.5px 1px black;
+        }

@@ -10,123 +10,51 @@
     <link rel="icon" href="Imgs/My_Photo.JPG" type="x-icon">
     <link rel="stylesheet" href="style.css">
     <title>My First Webpage</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: rgb(224, 243, 244);
-        }
-
-        ul {
-            display: flex;
-            list-style-type: none;
-            margin-top:1.2rem;
-
-        }
-
-        nav {
-            display: flex;
-            background-color: rgb(134, 55, 224);
-            width:100%
-        }
-        
-        @media only screen and (max-width:650px) {
-            ul{
-                display:block;
-            }
-            nav{
-                display:block;
-            }
-            #my_logo{
-               padding-left:10%;
-               padding-right:10%;
-               padding-top:2%;
-            }
-    
-            #home{
-                padding-bottom:4%;
-                
-            }
-            #secondwebpage{
-                padding-bottom: 4%;
-            }
-            #thirdwebpage{
-                padding-bottom:4%;
-            }
-               
-
-            
-        }
-
-        #my_logo {
-            width: 55px;
-            border-radius: 2rem;
-            margin: 0.2rem 2rem 0rem 0rem;
-        }
-
-        li a {
-            text-decoration: none;
-            color: white;
-            font-size: 1rem;
-            margin-right: 4rem;
-            margin-left: 0.2rem;
-        }
-
-        li a:hover {
-            font-weight: bold;
-            text-shadow:0.5px 1px black;
-        }
-
-        main {
-            height: 100%;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        div img {
-            border-radius: 2em;
-
-        }
-
-        footer {
-            text-align: center;
-            background-color: rgb(134, 55, 224);
-            color: white;
-            font-size:1rem;
-            padding-top: 0.2rem;
-            padding-bottom: 0.2rem;
-
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
-            <ul>
-                <li id="home"><a href=#index.html> Home </a></li>
-                <li id="secondwebpage"><a href="index2.html">Second Webpage</a></li>
-                <li id="thirdwebpage"><a href="index3.html">Third Webpage</a></li>
+            <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal1">
+            <ul class="navbar-list">
+                <li id="home"><a href="#index.html" class="list-item"> Home </a></li>
+                <li id="secondwebpage"><a href="index2.html" class="list-item">Second Webpage</a></li>
+                <li id="thirdwebpage"><a href="index3.html" class="list-item">Third Webpage</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div>
+        <div class="main-container">
             <h2>My First Webpage</h1>
                 <img src="Imgs/My_Photo.JPG" alt="My Photo" width="50px" title="Narayan Khanal">
                 <p>Hi there! This is Narayan Khanal, an aspiring web developer. I have started learning <abbr
                         title="Hyper Text Markup Language">HTML</abbr> to build my career in Web Developement.</p>
 
-                <p>If you would like to visit my second webpage, you can go at the top of the navigation bar or can also click <a href="index2.html">here</a>.</p>
+                <p>If you would like to visit my second webpage, you can go at the top of the navigation bar or can also
+                    click <a href="index2.html">here</a>.</p>
         </div>
     </main>
     <footer>
-        <p>&copy; 2022 Narayan Khanal</p>
+        <div class="foot-container">
+            <div class="foot-header1">
+                <h3 name="footer-title">Join Me</h3>
+                <ul class="footer-info">
+                    <li><a href="" class="social-media">Linkedin</a></li>
+                    <li><a href="" class="social-media">Instagram</a></li>
+                    <li><a href="" class="social-media">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="foot-header2">
+                <h3>Sign Up For More Information</h3>
+                <div class="text-form">
+                    <form action="">
+                    <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                    <input type="submit" name="submit-btn" id="submit-btn" value="Submit">
+                    </form>
+
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
