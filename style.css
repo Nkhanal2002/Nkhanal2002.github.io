@@ -3,47 +3,64 @@
         body {
             font-family: 'Roboto', sans-serif;
             background-color: rgb(224, 243, 244);
+            overflow:auto;
+            margin:0;
         }
 
         .navbar-list {
             display: flex;
-            list-style-type: none;
-            margin-top: 1.2rem;
+            margin-top: 0.4rem;
 
+        }
+        #nav-list{
+            list-style-type:none;
+            display:flex;
         }
 
         nav {
             display: flex;
             background-color: rgb(134, 55, 224);
             width: 100%;
+            position:sticky;
+            top:0;
+            z-index:1;
         }
+
 
         @media only screen and (max-width:650px) {
             .navbar-list {
                 display: block;
+                text-align: center;
             }
 
             nav {
                 display: block;
             }
 
-            #my_logo {
-                padding-left: 10%;
-                padding-right: 10%;
-                padding-top: 2%;
+            .logo_img{
+                text-align:center;
+            }
+            .navbar-list{
+                display:block;
+                text-align:center;
+            }
+            #nav-list{
+                display:block;
             }
 
             #home {
-                padding-bottom: 4%;
+                padding-bottom: 2%;
 
             }
 
             #secondwebpage {
-                padding-bottom: 4%;
+                padding-bottom: 2%;
+                margin-top: 1%;
             }
 
             #thirdwebpage {
-                padding-bottom: 4%;
+                padding-bottom: 2%;
+                margin-top: 1%;
             }
             .foot-header2{
                 margin-left:2rem;
@@ -59,28 +76,37 @@
         #my_logo {
             width: 55px;
             border-radius: 2rem;
-            margin: 0.2rem 2rem 0rem 0rem;
+            margin: 0.2rem 2rem 0rem 0.2rem;
         }
 
-        li .list-item {
+        li .list-items {
             text-decoration: none;
             color: white;
-            font-size: 1rem;
+            font-size: 1em;
             margin-right: 4rem;
             margin-left: 0.2rem;
         }
 
-        li .list-item:hover {
+        li .list-items:hover {
             font-weight: bold;
             text-shadow: 0.5px 1px black;
         }
 
-        main {
+        main{
             height: 100%;
+            overflow:auto;
+            z-index:0;
         }
 
-        h2 {
+        h3{
             text-align: center;
+        }
+        .header-content{
+            margin-top:-0.5em;
+        
+        }
+        .header-content>h3{
+            font-size:1.2em;
         }
 
         div img {
@@ -89,7 +115,9 @@
         }
 
         .main-container {
-            height: 60vh;
+            height: 80vh;
+            margin:1em;
+            overflow:auto;
         }
 
         footer {
@@ -106,6 +134,7 @@
             color: white;
             text-decoration: none;
             margin-top: 0.5rem;
+            font-size:1.1em;
         }
 
         .footer-info {
@@ -119,25 +148,28 @@
         .foot-container {
             display: flex;
             justify-content: space-evenly;
+            margin:0 1rem 0 1rem;
         }
 
         .foot-header1 {
             text-align: center;
         }
-        .text-form{
+        .text-form {
             margin-top: 33px;
         }
-        #email{
-            padding:0.3rem;
-            border-radius:0.3rem;
-            font-size:90%;
+
+        #email {
+            padding: 0.3rem;
+            border-radius: 0.3rem;
+            font-size: 0.8rem;
         }
-        #submit-btn{
-                background-color: rgb(73, 73, 232);
-                color:white;
-                padding:0.2rem;
-                font-size:0.8rem;
-                border-radius:0.3rem;
+
+        #submit-btn {
+            background-color: rgb(73, 73, 232);
+            color: white;
+            padding: 0.2rem;
+            font-size: 0.8rem;
+            border-radius: 0.3rem;
         }
         .social-media:hover{
             font-weight: bold;

@@ -19,8 +19,12 @@
 
         .navbar-list {
             display: flex;
-            list-style-type: none;
 
+        }
+
+        #nav-list {
+            list-style-type: none;
+            display: flex;
         }
 
         #my_logo {
@@ -45,26 +49,28 @@
                 display: block;
             }
 
-            .navbar-list {
-                display: block;
+            .navbar-list{
+                display:block;
+                text-align: center;
+            }
+            #nav-list{
+                display:block;
             }
 
-            #my_logo {
-                padding-left: 9.1%;
-                padding-right: 10%;
-                padding-top: 2%;
+            .logo_img {
+                text-align: center;
             }
 
             #home {
-                padding-bottom: 4%;
+                padding-bottom: 2%;
             }
 
             #secondwebpage {
-                padding-bottom: 4%;
+                padding-bottom: 2%;
             }
 
             #thirdwebpage {
-                padding-bottom: 4%;
+                padding-bottom: 2%;
             }
 
             .foot-header2 {
@@ -82,13 +88,14 @@
             background-color: rgb(224, 243, 244);
             ;
             font-family: 'Roboto', sans-serif;
+            margin: 0;
 
         }
 
         li .list-items {
             text-decoration: none;
             color: white;
-            font-size: 1rem;
+            font-size: 1em;
         }
 
         li a:hover {
@@ -96,12 +103,16 @@
             text-shadow: 0.5px 1px black;
         }
 
+        .main-container {
+            margin: 1em;
+        }
+
         .main-container h3 {
             text-align: center;
         }
 
-        footer{
-            box-sizing:border-box;
+        footer {
+            box-sizing: border-box;
             background-color: rgb(134, 55, 224);
             color: white;
             padding: 0.2rem 0 0.2rem 0;
@@ -127,9 +138,13 @@
         .foot-container {
             display: flex;
             justify-content: space-evenly;
+            margin:0 1rem 0 1rem;
         }
 
         .foot-header1 {
+            text-align: center;
+        }
+        .foot-header2 {
             text-align: center;
         }
 
@@ -142,12 +157,13 @@
             border-radius: 0.3rem;
             font-size: 0.8rem;
         }
-        #submit-btn{
+
+        #submit-btn {
             background-color: rgb(73, 73, 232);
-            color:white;
-            padding:0.2rem;
-            font-size:0.8rem;
-            border-radius:0.3rem;
+            color: white;
+            padding: 0.2rem;
+            font-size: 0.8rem;
+            border-radius: 0.3rem;
         }
 
         .social-media:hover {
@@ -160,17 +176,22 @@
 <body>
     <header>
         <nav>
-            <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
-            <ul class="navbar-list">
-                <li class="nav" id="home"><a class="list-items" href="index.html"> Home </a></li>
-                <li class="nav" id="secondwebpage"><a class="list-items" href="#index2.html">Second Webpage</a></li>
-                <li class="nav" id="thirdwebpage"><a class="list-items" href="index3.html">Third Webpage</a></li>
-            </ul>
+            <div class="logo_img">
+                <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
+            </div>
+            <div class="navbar-list">
+                <ul id="nav-list">
+                    <li class="nav" id="home"><a class="list-items" href="index.html"> Home</a></li>
+                    <li class="nav" id="secondwebpage"><a class="list-items" href="#index2.html">Second Webpage</a></li>
+                    <li class="nav" id="thirdwebpage"><a class="list-items" href="index3.html">Third Webpage</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <div class="main-container">
-            <h3>Ways to learn Front-End Development</h3>
+            <div id="header-content"><h3>Ways to learn Front-End Development</h3>
+            </div>
             <p>To learn a <b>Front-End Development</b>, one should have a good understanding of <em>three web designing
                     tools</em>. They are:
             <ol>
