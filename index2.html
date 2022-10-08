@@ -10,14 +10,30 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-        nav {
-            display: flex;
+        nav{
             background-color: rgb(134, 55, 224);
+            width: 100vw;
 
 
         }
+        header{
+            position: sticky;
+            top:0;
+            z-index:1;
+        }
 
-        .navbar-list {
+        body {
+            background:rgb(224, 243, 244);
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar-list{
             display: flex;
 
         }
@@ -45,16 +61,17 @@
         }
 
         @media only screen and (max-width:650px) {
-            nav {
+            .navbar-container {
                 display: block;
             }
 
-            .navbar-list{
-                display:block;
+            .navbar-list {
+                display: block;
                 text-align: center;
             }
-            #nav-list{
-                display:block;
+
+            #nav-list {
+                display: block;
             }
 
             .logo_img {
@@ -72,6 +89,9 @@
             #thirdwebpage {
                 padding-bottom: 2%;
             }
+            .main-container{
+                padding-right:1em;
+            }
 
             .foot-header2 {
                 margin-left: 2rem;
@@ -84,13 +104,7 @@
             }
         }
 
-        body {
-            background-color: rgb(224, 243, 244);
-            ;
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-
-        }
+        
 
         li .list-items {
             text-decoration: none;
@@ -105,10 +119,15 @@
 
         .main-container {
             margin: 1em;
+            text-align: justify;
+            min-height: 50vh;
+            overflow: auto ;
+            position:relative;
         }
 
         .main-container h3 {
             text-align: center;
+
         }
 
         footer {
@@ -138,12 +157,13 @@
         .foot-container {
             display: flex;
             justify-content: space-evenly;
-            margin:0 1rem 0 1rem;
+            margin: 0 1rem 0 1rem;
         }
 
         .foot-header1 {
             text-align: center;
         }
+
         .foot-header2 {
             text-align: center;
         }
@@ -177,42 +197,54 @@
 <body>
     <header>
         <nav>
-            <div class="logo_img">
-                <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
-            </div>
-            <div class="navbar-list">
-                <ul id="nav-list">
-                    <li class="nav" id="home"><a class="list-items" href="index.html"> Home</a></li>
-                    <li class="nav" id="secondwebpage"><a class="list-items" href="#index2.html">Second Webpage</a></li>
-                    <li class="nav" id="thirdwebpage"><a class="list-items" href="index3.html">Third Webpage</a></li>
-                </ul>
+            <div class="navbar-container">
+                <div class="logo_img">
+                    <img id="my_logo" src="Imgs/My_Photo.JPG" alt="MyPhoto" title="Narayan Khanal">
+                </div>
+                <div class="navbar-list">
+                    <ul id="nav-list">
+                        <li class="nav" id="home"><a class="list-items" href="index.html">Home</a></li>
+                        <li class="nav" id="secondwebpage"><a class="list-items" href="#index2.html">Second Webpage</a>
+                        </li>
+                        <li class="nav" id="thirdwebpage"><a class="list-items" href="index3.html">Third Webpage</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <div class="main-container">
-            <div id="header-content"><h3>Ways to learn Front-End Development</h3>
+            <div id="header-content">
+                <h3>Ways to learn Front-End Development</h3>
+                <p>To learn a <b>Front-End Development</b>, one should have a good understanding of <em>three web
+                        designing
+                        tools</em>. They are:
+                <ol>
+                    <li id="html"><abbr title="Hyper Text Mark up Language">HTML</abbr></li><img
+                        src="Imgs/Html_logo.png" alt="a logo of HTML" width="50px">
+                    <p>HTML stands for <i>Hyper Text Markup Language.</i>It is one of the main three web page designing
+                        tool
+                        that helps to structure the webpage. For instance, you can think it as a skeleton part of the
+                        human
+                        body.</p>
+
+                    <li><abbr title="Cascading Style Sheet">CSS</abbr></li><img src="Imgs/CSS_logo.png"
+                        alt="a logo of CSS" width="40px">
+                    <p>CSS stands for <i>Cascading Style Sheet.</i> It helps to put on some styles on the webpage to
+                        make it
+                        looks good. For example, you can consider CSS as a human body with just muscles over skeleton
+                        part.
+                    </p>
+
+                    <li><abbr title="JavaScript">JS</abbr></li><img src="Imgs/JS_Logo.webp" alt="a logo of JS"
+                        width="50px">
+                    <p>JS stands for <i>JavaScript</i>. It is one of the most important tools in building a logical
+                        website.For example, you can assume it as a complete human beings with sense organs who can talk
+                        and
+                        walk. </p>
+                </ol>
             </div>
-            <p>To learn a <b>Front-End Development</b>, one should have a good understanding of <em>three web designing
-                    tools</em>. They are:
-            <ol>
-                <li id="html"><abbr title="Hyper Text Mark up Language">HTML</abbr></li><img src="Imgs/Html_logo.png"
-                    alt="a logo of HTML" width="30px">
-                <p>HTML stands for <i>Hyper Text Markup Language.</i>It is one of the main three web page designing tool
-                    that helps to structure the webpage. For instance, you can think it as a skeleton part of the human
-                    body.</p>
-
-                <li><abbr title="Cascading Style Sheet">CSS</abbr></li><img src="Imgs/CSS_logo.png" alt="a logo of CSS"
-                    width="40px">
-                <p>CSS stands for <i>Cascading Style Sheet.</i> It helps to put on some styles on the webpage to make it
-                    looks good. For example, you can consider CSS as a human body with just muscles over skeleton part.
-                </p>
-
-                <li><abbr title="JavaScript">JS</abbr></li><img src="Imgs/JS_Logo.webp" alt="a logo of JS" width="50px">
-                <p>JS stands for <i>JavaScript</i>. It is one of the most important tools in building a logical
-                    website.For example, you can assume it as a complete human beings with sense organs who can talk and
-                    walk. </p>
-            </ol>
 
         </div>
     </main>

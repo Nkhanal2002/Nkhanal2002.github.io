@@ -1,178 +1,227 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: rgb(224, 243, 244);
-            overflow:auto;
-            margin:0;
-        }
-
-        .navbar-list {
-            display: flex;
-            margin-top: 0.4rem;
-
-        }
-        #nav-list{
-            list-style-type:none;
-            display:flex;
-        }
-
-        nav {
-            display: flex;
-            background-color: rgb(134, 55, 224);
-            width: 100%;
-            position:sticky;
-            top:0;
-            z-index:1;
-        }
 
 
-        @media only screen and (max-width:650px) {
-            .navbar-list {
-                display: block;
-                text-align: center;
-            }
+/* Header section */
+header {
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
 
-            nav {
-                display: block;
-            }
+.navbar-list {
+    display: flex;
+    margin-top: 0.4rem;
+}
 
-            .logo_img{
-                text-align:center;
-            }
-            .navbar-list{
-                display:block;
-                text-align:center;
-            }
-            #nav-list{
-                display:block;
-            }
+#nav-list {
+    list-style-type: none;
+    display: flex;
+}
 
-            #home {
-                padding-bottom: 2%;
-
-            }
-
-            #secondwebpage {
-                padding-bottom: 2%;
-                margin-top: 1%;
-            }
-
-            #thirdwebpage {
-                padding-bottom: 2%;
-                margin-top: 1%;
-            }
-            .foot-header2{
-                margin-left:2rem;
-            }
-            #submit-btn{
-                margin-top:4px;
-
-            }
+nav {
+    background-color: rgb(134, 55, 224);
+    width: 100vw;
 
 
-        }
+}
 
-        #my_logo {
-            width: 55px;
-            border-radius: 2rem;
-            margin: 0.2rem 2rem 0rem 0.2rem;
-        }
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
 
-        li .list-items {
-            text-decoration: none;
-            color: white;
-            font-size: 1em;
-            margin-right: 4rem;
-            margin-left: 0.2rem;
-        }
+#my_logo {
+        width: 55px;
+        border-radius: 2rem;
+        margin: 0.2rem 2rem 0rem 0.2rem;
+    }
 
-        li .list-items:hover {
-            font-weight: bold;
-            text-shadow: 0.5px 1px black;
-        }
+li .list-items {
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        margin-right: 4rem;
+    }
 
-        main{
-            height: 100%;
-            overflow:auto;
-            z-index:0;
-        }
+li .list-items:hover {
+        font-weight: bold;
+        text-shadow: 0.5px 1px black;
+    }
 
-        h3{
-            text-align: center;
-        }
-        .header-content{
-            margin-top:-0.5em;
-        
-        }
-        .header-content>h3{
-            font-size:1.2em;
-        }
 
-        div img {
-            border-radius: 2em;
 
-        }
 
-        .main-container {
-            height: 80vh;
-            margin:1em;
-            overflow:auto;
-        }
 
-        footer {
-            background-color: rgb(134, 55, 224);
-            color: white;
-            padding-top: 0.2rem;
-            padding-bottom: 0.2rem;
-            height:100%;
+/* Body section */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(224, 243, 244);
+    background:url(Imgs/wallpaper1.jpg) no-repeat bottom center;
+    overflow: auto;
+    margin: 0;
+    color:white;
+}
+h3 {
+    text-align: center;
+}
 
-        }
+.header-content {
+    margin-top: -0.5em;
+    color:black;
 
-        [class="footer-info"] a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            margin-top: 0.5rem;
-            font-size:1.1em;
-        }
+}
 
-        .footer-info {
-            list-style-type: none;
-        }
+.header-content>h3 {
+    font-size: 1.35em;
 
-        [name="footer-title"] {
-            padding-left: 2rem;
-        }
+}
 
-        .foot-container {
-            display: flex;
-            justify-content: space-evenly;
-            margin:0 1rem 0 1rem;
-        }
+.main-container {
+        height: 80vh;
+        margin:0 0.6em 0 0.6em;
+        overflow: auto;
+        text-align: justify;
+        overflow: auto;
 
-        .foot-header1 {
-            text-align: center;
-        }
-        .text-form {
-            margin-top: 33px;
-            text-align: center;
-        }
+    }
 
-        #email {
-            padding: 0.3rem;
-            border-radius: 0.3rem;
-            font-size: 0.8rem;
-        }
+main {
+        height: 100%;
+        overflow: auto;
 
-        #submit-btn {
-            background-color: rgb(73, 73, 232);
-            color: white;
-            padding: 0.2rem;
-            font-size: 0.8rem;
-            border-radius: 0.3rem;
-        }
-        .social-media:hover{
-            font-weight: bold;
-            text-shadow: 0.5px 1px black;
-        }
+    }
+
+div img {
+        border-radius: 2em;
+
+    }
+
+
+
+/* Making a responsive navbar and footer */
+@media only screen and (max-width:810px) {
+    .navbar-list {
+        display: block;
+        text-align: center;
+    }
+    .main-container{
+        color:black;
+    }
+
+    .navbar-container {
+        display: block;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .logo_img {
+        text-align: center;
+    }
+
+    #nav-list {
+        display: block;
+    }
+
+    #home {
+        padding-bottom: 2%;
+
+    }
+
+    #secondwebpage {
+        padding-bottom: 2%;
+        margin-top: 1%;
+    }
+
+    #thirdwebpage {
+        padding-bottom: 2%;
+        margin-top: 1%;
+    }
+    .main-container{
+        justify-content:justify;
+        padding: 0 1em 0 0.2em;
+    }
+
+    .foot-header2 {
+        margin-left: 2rem;
+    }
+
+    #submit-btn {
+        margin-top: 4px;
+
+    }
+
+
+}
+@media screen and (max-width:500px){
+    .main-container{
+        color:black;
+    }
+}
+
+
+/* Footer section */
+footer {
+    background-color: rgb(134, 55, 224);
+    color: white;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    height: 100%;
+
+}
+
+[class="footer-info"] a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    font-size: 1.1em;
+}
+
+.footer-info {
+    list-style-type: none;
+}
+
+[name="footer-title"] {
+    padding-left: 2rem;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 1rem 0 1rem;
+}
+
+.foot-header1 {
+    text-align: center;
+}
+
+.text-form {
+    margin-top: 33px;
+    text-align: center;
+}
+
+#email {
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+}
+
+#submit-btn {
+    background-color: rgb(73, 73, 232);
+    color: white;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+}
+#submit-btn:hover{
+    background-color: rgb(203, 237, 203);
+    color:black;
+}
+
+.social-media:hover {
+    font-weight: bold;
+    text-shadow: 0.5px 1px black;
+}
