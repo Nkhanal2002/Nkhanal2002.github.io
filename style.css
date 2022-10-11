@@ -74,6 +74,7 @@ h3 {
 
 .header-content>h3 {
     font-size: 1.35em;
+    color:white;
 
 }
 
@@ -104,9 +105,6 @@ div img {
     .navbar-list {
         display: block;
         text-align: center;
-    }
-    .main-container{
-        color:black;
     }
 
     .navbar-container {
@@ -154,11 +152,6 @@ div img {
     }
 
 
-}
-@media screen and (max-width:500px){
-    .main-container{
-        color:black;
-    }
 }
 
 
