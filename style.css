@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
-
 /* Header section */
 header {
     position:sticky;
@@ -66,15 +65,9 @@ h3 {
     text-align: center;
 }
 
-.header-content {
-    margin-top: -0.5em;
-    color:black;
-
-}
-
 .header-content>h3 {
     font-size: 1.35em;
-    color:white;
+    color:black;
 
 }
 
@@ -100,19 +93,17 @@ div img {
 
 
 
-/* Making a responsive navbar and footer */
-@media only screen and (max-width:810px) {
+/* Mobile Design */
+@media only screen and (max-width:650px){
     .navbar-list {
-        display: block;
+        flex-direction: column;
         text-align: center;
     }
 
     .navbar-container {
-        display: block;
-    }
+        /* display: block; */
+        flex-direction:column;
 
-    nav {
-        display: block;
     }
 
     .logo_img {

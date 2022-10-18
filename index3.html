@@ -5,110 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Imgs/Favicon.png">
+    <title>CSS Grid Table Layout</title>
+    <!-- 64 X 64 (browser favicon) -->
+    <link rel="icon" href="Imgs/Favicon.png" type="image/png" sizes ="64 X 64">
+    <!-- 128 X 128 (normal android size) -->
+    <link rel="icon" href="Imgs/Favicon.png" type="image/png" sizes ="128 X 128">
+    <!-- 180 X 180 (modern iphone, ipad, mac size)-->
+    <link rel="apple-touch-icon" href="Imgs/Favicon.png" type="image/png" sizes ="180 X 180">
     <link rel="stylesheet" href="style3.css">
-    <title>Table PageLayout</title>
-
 </head>
 
 <body>
-    <table class="bigTable">
-        <thead>
-            <tr>
-                <th colspan="4" id="th1">Front End Development</th>
-            </tr>
-
-            <tr>
-                <th>Web Designing Tools</th>
-                <th>Links</th>
-                <th>Images</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody class="body">
-            <tr>
-                <td title="Hyper Text Markup Language">HTML</td>
-                <td><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">More About
-                        HTML</a></td>
-                <td><img src="Imgs/Html_logo.png" alt="Html logo" width="100px"></td>
-                <td>
-                    <div class="description">
-                        <p>
-                            HTML stands for <i>Hyper Text Markup Language.</i> It is one of the main
-                            three web page designing tool that helps to structure the webpage. For instance, you can
-                            think
-                            it as a skeleton part of the human.</p>
-                        <p> A table showing a few of HTML tags with function and a short example:</p>
-                        <table class="htmlTable" style="border:1px solid">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        HTML Tags
-                                    </th>
-                                    <th>
-                                        Function
-                                    </th>
-                                    <th>
-                                        An Example
-                                    </th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="smallTable">
-                                    <td>&lt;img&gt;</td>
-                                    <td>To insert image/s to a webpage.</td>
-                                    <td rowspan="3">
-                                        <img id="html_example" src="Imgs/HTML_Example.png"
-                                            alt=" An Example of HTML tags">
-                                    </td>
-                                </tr>
-                                <tr class="smallTable">
-                                    <td>&lt;a&gt;</td>
-                                    <td>To create a link option in a webpage.</td>
-                                </tr>
-                                <tr class="smallTable">
-                                    <td>&lt;ul&gt;</td>
-                                    <td>To create an unorder list.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td title="Cascading Style Sheet">CSS</td>
-                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">More About
-                        CSS</a></td>
-                <td><img src="Imgs/CSS_logo.png" alt="CSS Logo" width="90"></td>
-                <td>
-                    <div class="description">CSS stands for <i>Cascading Style Sheet.</i> It helps to put on some styles
-                        on the webpage to make it looks good. For example, you can consider CSS as a human body with
-                        just muscles over skeleton part.</div>
-                </td>
-            </tr>
-            <tr>
-                <td title="JavaScript">JS</td>
-                <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target="_blank">More
-                        About JS</a></td>
-                <td><img src="Imgs/JS_Logo.webp" alt="JS logo" width="100"></td>
-                <td>
-                    <div class="description">JS stands for <i>JavaScript</i>. It is one of the most important tools in
-                        building a logical website.For example, you can assume it as a complete human beings with sense
-                        organs who can talk and walk. </div>
-                </td>
-            </tr>
-        </tbody>
-        <tfoot class="foot">
-            <tr>
-                <td colspan=4>
-                    <p style="font-weight:bold">&copy; Copyright Front End Development</p>
-                </td>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="container">
+        <nav>Navbar</nav>
+        <div id="sidebar">Side bar</div>
+        <main>Main</main>
+        <div id="Content1">Content 1</div>
+        <div id="Content2">Content 2</div>
+        <div id="Content3">Content 3</div>
+        <footer>Footer</footer>
+    </div>
+    <div class="buttons">
     <a href="index.html" class="a_btn1"> <button type="button" class="btn">Home</button></a>
     <a href="index2.html" class="a_btn2"> <button type="button" class="btn">Second Webpage</button></a>
+</div>
 </body>
 
+</body>
 </html>

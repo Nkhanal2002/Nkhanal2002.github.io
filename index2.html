@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Imgs/Html_logo.png" type="x-icon">
+    <!-- 64 X 64 (browser favicon) -->
+    <link rel="icon" href="Imgs/Favicon.png" type="image/png" sizes="64 X 64">
+    <!-- 128 X 128 (normal android size) -->
+    <link rel="icon" href="Imgs/Favicon.png" type="image/png" sizes="128 X 128">
+    <!-- 180 X 180 (modern iphone, ipad, mac size)-->
+    <link rel="apple-touch-icon" href="Imgs/Favicon.png" type="image/png" sizes="180 X 180">
     <title>FrontEnd Tools</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-        nav{
+        nav {
             background-color: rgb(134, 55, 224);
             width: 100vw;
 
 
         }
-        header{
+
+        header {
             position: sticky;
-            top:0;
-            z-index:1;
+            top: 0;
+            z-index: 1;
         }
 
         body {
-            background:rgb(224, 243, 244);
+            background: rgb(224, 243, 244);
             font-family: 'Roboto', sans-serif;
             margin: 0;
         }
@@ -33,7 +39,7 @@
             justify-content: space-between;
         }
 
-        .navbar-list{
+        .navbar-list {
             display: flex;
 
         }
@@ -60,18 +66,22 @@
             align-items: center;
         }
 
+        /* Mobile Design */
         @media only screen and (max-width:650px) {
             .navbar-container {
-                display: block;
+                /* display: block; */
+                flex-direction: column;
             }
 
             .navbar-list {
-                display: block;
+                /* display: block; */
                 text-align: center;
+                flex-direction: column;
             }
 
             #nav-list {
-                display: block;
+                /* display: block; */
+                flex-direction: column;
             }
 
             .logo_img {
@@ -89,8 +99,9 @@
             #thirdwebpage {
                 padding-bottom: 2%;
             }
-            .main-container{
-                padding-right:1em;
+
+            .main-container {
+                padding-right: 1em;
             }
 
             .foot-header2 {
@@ -104,7 +115,7 @@
             }
         }
 
-        
+
 
         li .list-items {
             text-decoration: none;
@@ -121,8 +132,8 @@
             margin: 1em;
             text-align: justify;
             min-height: 50vh;
-            overflow: auto ;
-            position:relative;
+            overflow: auto;
+            position: relative;
         }
 
         .main-container h3 {
@@ -272,5 +283,4 @@
         </div>
     </footer>
 </body>
-
 </html>
