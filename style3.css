@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
 
 }
-
+/* Making a container a grid */
 .container{
     display:grid;
     height:100vh;
