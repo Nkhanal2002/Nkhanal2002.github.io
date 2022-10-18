@@ -96,9 +96,6 @@ div img {
 /* Mobile Design */
 @media only screen and (max-width:650px){
 
-    header{
-        overflow:auto;
-    }
     .navbar-list {
         flex-direction: column;
         text-align: center;
@@ -135,10 +132,6 @@ div img {
     .main-container{
         justify-content:justify;
         padding: 0 1em 0 0.2em;
-    }
-
-    footer{
-        overflow:auto;
     }
 
     .foot-header2 {
