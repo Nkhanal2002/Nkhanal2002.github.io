@@ -91,6 +91,9 @@ footer{
 .a_btn1{
     margin-right:1em;
 }
+.a_btn3{
+    margin-left: 1em;
+}
 .btn{
     background-color: rgb(134, 55, 224);
     color:white;
