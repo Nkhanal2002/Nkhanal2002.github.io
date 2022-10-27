@@ -153,7 +153,8 @@ footer {
     color: white;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    height: 100%;
+    width:100vw;
+  
 
 }
 
