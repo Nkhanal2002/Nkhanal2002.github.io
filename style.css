@@ -59,17 +59,32 @@ body {
     background:url(Imgs/wallpaper1.jpg) no-repeat bottom center;
     margin: 0;
     color:white;
-    /* overflow-x:hidden; */
+    overflow-x:hidden;
 }
-h3 {
-    text-align: center;
-}
-
-.header-content>h3 {
+.header-content{
     font-size: 1.35em;
-    color:black;
+    color:rgb(52, 7, 52);
+    text-align:center;
 
 }
+#small-btn{
+    margin-bottom:1em;
+    font-weight:bold;
+    border-radius:1em;
+}
+#small-btn:hover{
+    background-color:rgb(58, 58, 193);
+    color:white;
+}
+
+.my-logo{
+    text-align: center;
+    margin-top:2em;
+}
+.short-intro{
+    text-align:center;
+}
+
 
 .main-container {
         height: 80vh;
@@ -92,7 +107,9 @@ div img {
 
 /* Mobile Design */
 @media only screen and (max-width:650px){
-
+    nav{
+        width:100vw;
+    }
     .navbar-list {
         flex-direction: column;
         text-align: center;
@@ -143,6 +160,9 @@ div img {
         margin-top: 4px;
 
     }
+    footer{
+        width: 100vw;
+    }
 
 
 }
@@ -154,7 +174,6 @@ footer {
     color: white;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    /* width:100vw; */
   
 
 }
