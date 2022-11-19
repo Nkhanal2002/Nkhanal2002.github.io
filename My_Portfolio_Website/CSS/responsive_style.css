@@ -1,0 +1,74 @@
+/* For mobile devices having a max width of 808px */
+@media only screen and (max-width: 808px) {
+    .nav-menu{
+        flex-direction:column;
+        height:16rem;
+        transition:all 0.5s ease-out;
+    }
+    .nav-logo{
+        padding:0.1rem 0rem;
+    }
+    #list{
+        flex-direction:column;
+        margin-bottom:1rem;
+    }
+    .list-options{
+        padding:1rem 0rem;
+    }
+    .hamburger{
+        margin-top:1rem;
+        display:block;
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    .hamburger:hover{
+       padding:0.2rem 0rem;
+       background-color:rgb(55, 58, 58);
+       border-radius:0.4rem;
+       transition:all 0.3s ease-out;
+    }
+    .h-resp-navbar{
+        height:4rem;
+    }
+    .v-resp-navmenu{
+        opacity:0;
+    }
+    .home-container2{
+        padding-bottom:2rem;
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items:center;
+        height:100%;
+    }
+    .section1,.section2{
+        text-align:center;
+        margin-top:0.6rem;
+        padding:0rem 1rem;
+    }
+    .section2>img{
+        border-radius:1.5rem;
+        width:40%;
+    }
+    .icons-email{
+        flex-direction:column;
+    }
+    .icons{
+        margin-top:0.3rem;
+    }
+    .email{
+        margin-top:1rem;
+    }
+}
+/* For a mobile device having a maximum width of 300px */
+@media only screen and (max-width:300px){
+    #header1{
+        font-size:1.4rem;
+    }
+    .header>h3{
+        font-size:1.1rem;
+    }
+    .home-container2{
+        padding:0rem 3px;
+    }
+}

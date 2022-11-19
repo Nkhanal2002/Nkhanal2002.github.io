@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* header section */
+header{
+    position:sticky;
+    top:0;
+    z-index:1;
+    width:100%;
+
+}
+.links{
+    color:white;
+    text-decoration: none;
+    font-size:1.15rem;
+}
+.links:hover{
+    transition:all 0.3s ease-out;
+    border-bottom:0.2rem solid white;
+    padding:0.2rem;
+    color:rgb(21, 211, 224);
+    
+}
+.nav-menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0.5rem 0rem;
+}
+#list{
+    display:flex;
+    align-items:center;
+    list-style-type: none;
+}
+.hamburger{
+    cursor:pointer;
+    display:none;
+}
+.line{
+    width:1.8rem;
+    height:0.15rem;
+    background-color: white;
+    margin:0.3rem 1rem;
+}
+.list-options{
+    margin:0rem 1rem 0rem 2rem;
+}
+.nav-logo>img{
+    border-radius:2rem;
+    margin-left:0.6rem;
+}
+/* main section */
+.background{
+    background:url(/Images/wallpaper2.jpg) no-repeat bottom;
+    color:white;
+    width:100%;
+
+   
+}
+.home-container2{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    width:100%;
+    height:100vh;
+
+    
+}
+.name-style{
+    color:rgb(21, 211, 224);
+}
+.section1{
+    padding:0rem 0rem 0rem 2.5rem;
+}
+.icons-email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section2>img{
+    width:15rem;
+    border-radius:40rem;
+    margin:1rem 3rem 1rem 2.5rem;
+}
+#header1{
+    font-size:2rem;
+}
+.icons{
+    margin-left:1rem;
+    color:white;
+    display:inline-block;
+}
+.social-links{
+    text-decoration:none;
+    font-size:1.3rem;
+    color:white;
+}
+.social-links:hover{
+    transition:all 0.4s ease;
+    color:rgb(39, 148, 232);
+}
+.icon-img:hover{
+    transform:rotate(15deg);
+}
+#email-info{
+    margin-left:1rem;
+}
+#email-info:hover{
+    color:rgb(21, 211, 224);
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
