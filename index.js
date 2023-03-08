@@ -4,6 +4,7 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLogo = document.querySelector('.nav-logo');
 const navListMenu = document.querySelector('.navlist-menu');
+const infoContainer = document.querySelector('.info-container')
 
 // adding addEventListener to toggle between different classes
 hamburger.addEventListener('click',()=>{
@@ -11,5 +12,3 @@ hamburger.addEventListener('click',()=>{
     navLogo.classList.toggle('v-resp-navmenu');
     navMenu.classList.toggle('h-resp-navbar');
 })
-
-

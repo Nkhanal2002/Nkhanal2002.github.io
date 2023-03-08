@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-*, html{
+html{
     scroll-behavior: smooth !important;
 }
 /* header section */
@@ -239,12 +239,12 @@ input{
     text-align:center;
 }
 /* Targeting the social media icons only */
-#icon-link{
+.contact-social-links{
     margin-top:1rem;
     color: black;
     font-size: 1.4rem;
 }
-#icon-link:hover{
+.contact-social-links:hover{
     color: rgba(14, 162, 211, 0.879);
 }
 

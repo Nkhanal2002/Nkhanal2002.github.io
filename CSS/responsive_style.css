@@ -95,7 +95,8 @@
 /* For a mobile device having a maximum width of 300px */
 @media only screen and (max-width:435px){
     body{
-        width:fit-content;
+        width:-moz-fit-content;
+        width: fit-content;
     }
     #header1{
         font-size:1.4rem;
