@@ -149,7 +149,7 @@ header{
 .logos{
     margin-top:1rem;
     display:grid;
-    grid-template-columns:5rem 5rem 5rem 5rem;
+    grid-template-columns:5rem 5rem 5rem 5rem 5rem;
 }
 .logo-hover:hover{
     transition: all 0.3s ease;
@@ -157,10 +157,12 @@ header{
 }
 .logos-title{
    display: grid;
-   grid-template-columns: 5.1rem 3.8rem 6rem 5rem;
+   grid-template-columns: 5.1rem 3.8rem 6rem 5rem 5rem;
 
 }
-/* contact container */
+#git{
+    margin-left: 0.5rem;
+}
 .contact-container{
     width: 100%;
     padding: 1rem 0rem 1.4rem 1rem;
