@@ -163,6 +163,7 @@ header{
 #git{
     margin-left: 0.5rem;
 }
+/* contact container */
 .contact-container{
     width: 100%;
     padding: 1rem 0rem 1.4rem 1rem;
@@ -249,9 +250,6 @@ input{
 .contact-social-links:hover{
     color: rgba(14, 162, 211, 0.879);
 }
-
-
-
 
 /* footer */
 footer{
