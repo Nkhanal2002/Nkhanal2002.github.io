@@ -33,6 +33,7 @@ header{
     justify-content:space-between;
     align-items:center;
     padding:0.5rem 0rem;
+    border-bottom:0.01rem solid white;
 }
 #list{
     display:flex;
@@ -58,7 +59,7 @@ header{
 }
 /* main section */
 .background{
-    background:url(/Images/wallpaper2.jpg) repeat-x bottom;
+    background:url(/Images/main-background.gif);
     color:white;
     width:100%;
 
@@ -253,7 +254,7 @@ input{
 
 /* footer */
 footer{
-    background:url(/Images/wallpaper2.jpg) repeat-x bottom;
+    background:url(/Images/main-background.gif);
 }
 .footinfo{
     text-align: center;
